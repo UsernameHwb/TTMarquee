@@ -15,6 +15,9 @@
 		D55595D6208F115A002E8BBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D55595D5208F115A002E8BBA /* main.m */; };
 		D55595E0208F115A002E8BBA /* TTMarqueeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D55595DF208F115A002E8BBA /* TTMarqueeDemoTests.m */; };
 		D55595EB208F115A002E8BBA /* TTMarqueeDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D55595EA208F115A002E8BBA /* TTMarqueeDemoUITests.m */; };
+		D5559606208F1758002E8BBA /* home_speaker@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5559601208F1758002E8BBA /* home_speaker@2x.png */; };
+		D5559607208F1758002E8BBA /* TTMarqueeView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5559603208F1758002E8BBA /* TTMarqueeView.m */; };
+		D5559608208F1758002E8BBA /* UIView+add.m in Sources */ = {isa = PBXBuildFile; fileRef = D5559605208F1758002E8BBA /* UIView+add.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		D55595E6208F115A002E8BBA /* TTMarqueeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTMarqueeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55595EA208F115A002E8BBA /* TTMarqueeDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTMarqueeDemoUITests.m; sourceTree = "<group>"; };
 		D55595EC208F115A002E8BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5559601208F1758002E8BBA /* home_speaker@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_speaker@2x.png"; sourceTree = "<group>"; };
+		D5559602208F1758002E8BBA /* TTMarqueeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTMarqueeView.h; sourceTree = "<group>"; };
+		D5559603208F1758002E8BBA /* TTMarqueeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTMarqueeView.m; sourceTree = "<group>"; };
+		D5559604208F1758002E8BBA /* UIView+add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+add.h"; sourceTree = "<group>"; };
+		D5559605208F1758002E8BBA /* UIView+add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+add.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		D55595C5208F115A002E8BBA /* TTMarqueeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D5559600208F1758002E8BBA /* TTMarquee */,
 				D55595C6208F115A002E8BBA /* AppDelegate.h */,
 				D55595C7208F115A002E8BBA /* AppDelegate.m */,
 				D55595C9208F115A002E8BBA /* ViewController.h */,
@@ -130,6 +139,18 @@
 				D55595EC208F115A002E8BBA /* Info.plist */,
 			);
 			path = TTMarqueeDemoUITests;
+			sourceTree = "<group>";
+		};
+		D5559600208F1758002E8BBA /* TTMarquee */ = {
+			isa = PBXGroup;
+			children = (
+				D5559601208F1758002E8BBA /* home_speaker@2x.png */,
+				D5559602208F1758002E8BBA /* TTMarqueeView.h */,
+				D5559603208F1758002E8BBA /* TTMarqueeView.m */,
+				D5559604208F1758002E8BBA /* UIView+add.h */,
+				D5559605208F1758002E8BBA /* UIView+add.m */,
+			);
+			path = TTMarquee;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +262,7 @@
 				D55595D3208F115A002E8BBA /* LaunchScreen.storyboard in Resources */,
 				D55595D0208F115A002E8BBA /* Assets.xcassets in Resources */,
 				D55595CE208F115A002E8BBA /* Main.storyboard in Resources */,
+				D5559606208F1758002E8BBA /* home_speaker@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +288,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D55595CB208F115A002E8BBA /* ViewController.m in Sources */,
+				D5559607208F1758002E8BBA /* TTMarqueeView.m in Sources */,
 				D55595D6208F115A002E8BBA /* main.m in Sources */,
+				D5559608208F1758002E8BBA /* UIView+add.m in Sources */,
 				D55595C8208F115A002E8BBA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TTMarqueeView.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    TTMarqueeView *marquee = [[TTMarqueeView alloc] initWithFrame:CGRectMake(0, 100, self.view.frame.size.width, 30)];
+    marquee.marqueeText = @"我是跑马灯";
+    [self.view addSubview:marquee];
 }
 
 
